@@ -76,6 +76,20 @@
             font-size: 3rem;
         }
 
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #8a84f0;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
         .rightSection img {
             width: 80%;
         }
@@ -83,7 +97,8 @@
         .purple {
             color: blueviolet;
         }
-        .textgray{
+
+        .textgray {
             color: gray;
         }
 
@@ -100,11 +115,66 @@
         .secondSection h1 {
             font-size: 2rem;
         }
-        .secondSection .box{
+
+        .secondSection .box {
             background: white;
             width: 80vw;
             height: 2px;
             margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 180px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 90px;
+            color: gray;
+            width: 130px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgb(18, 3, 53);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
         }
     </style>
 </head>
@@ -131,6 +201,10 @@
                 Hi, My name is <span class="purple">Aditya</span>
                 <div>and I am a passonate</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="bg.png" alt="">
@@ -141,10 +215,85 @@
             <span class="textgray">What I have done so far</span>
             <h1>Work Experience</h1>
             <div class="box">
-<div class="vertical"></div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi sapiente doloremque non nihil nam
+                        excepturi commodi natus asperiores impedit veniam? Corrupti, delectus magni?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi sapiente doloremque non nihil nam
+                        excepturi commodi natus asperiores impedit veniam? Corrupti, delectus magni?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi sapiente doloremque non nihil nam
+                        excepturi commodi natus asperiores impedit veniam? Corrupti, delectus magni?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi sapiente doloremque non nihil nam
+                        excepturi commodi natus asperiores impedit veniam? Corrupti, delectus magni?
+                    </div>
+                </div>
+
+
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aditya's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.adityaportfolio.com | All rights reserved
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
